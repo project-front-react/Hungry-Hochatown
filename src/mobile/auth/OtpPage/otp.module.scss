@@ -1,0 +1,113 @@
+@import"../../../app.scss";
+.otpPage{
+    padding: 25px 15px;
+    background-color: $orange-color;
+    margin-top: -22px;
+    border-radius: 22px 22px 0px 0px;
+    .logoA{
+        height: 50px
+    }
+    p{
+        color: $white-color;
+        line-height: calc(20px + (25 - 20) * ((100vw - 320px) / (1920 - 320)));
+        margin-top: 15px;
+        font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320))) !important;
+    }
+    span{
+        text-align: left;
+        display: flex;
+        -webkit-box-align: center;
+        color: $white-color;
+        align-items: center;
+        justify-content: left;
+        margin-bottom: calc(24px + (40 - 34) * ((100vw - 320px) / (1920 - 320)));
+        font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (1920 - 320))) !important;
+        a{
+            text-decoration: underline;
+            color: $white-color;
+            margin-left: 10px;
+            svg{
+                width: 21px;
+                height: 21px;
+                margin-top: 5px;
+            }
+        }
+    }
+    .otpSection{
+        .customForm{
+            text-align: center;
+            h1{
+                margin-bottom: calc(6px + (10 - 6) * ((100vw - 320px) / (1920 - 320)));
+                text-align: left;
+                color: $white-color;
+                font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (1920 - 320))) !important;
+                font-weight: 600;
+            }
+            .otpNumber{
+                margin-bottom: calc(34px + (50 - 34) * ((100vw - 320px) / (1920 - 320)));                
+                .otyinput{
+                    display: flex;
+                    -webkit-box-align: center;
+                    align-items: center;
+                    gap: 10px;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    justify-content: center;
+                    margin-bottom: calc(15px + (20 - 15) * ((100vw - 320px) / (1920 - 320)));
+                    position: relative;
+                    input{
+                        font-weight: 700;
+                        padding: 0;
+                        width: 25%;
+                        height: 50px;
+                        text-align: center;
+                        border: 1px solid #fd5d032b;
+                        background-color: $white-color;
+                        color: $black-color;
+                    }   
+                }
+            }
+
+            .submitBTN{
+                width: 100%;
+                margin-bottom: 22px;
+                font-weight: bold;
+                font-size: calc(17px + (19 - 17) * ((100vw - 320px) / (1920 - 320)));
+                padding: calc(8px + (14 - 8) * ((100vw - 320px) / (1920 - 320))) calc(20px + (34 - 20) * ((100vw - 320px) / (1920 - 320)));
+                background-color: $black-color;
+                color: $white-color;
+                border-radius: 5px;
+                line-height: 21px;
+                border: unset;
+            }
+
+            .resendTimer {
+                display: flex;
+                justify-content: center;
+            }
+
+            .resendOTPBtnPrev {
+                background-color: transparent;
+                color: $black-color;
+                font-weight: bold;
+                font-size: calc(17px + (19 - 17) * ((100vw - 320px) / (1920 - 320)));
+                border-radius: 5px;
+                line-height: 21px;
+                border: unset;
+            }
+
+            .resendOTPBtn {
+                background-color: transparent;
+                color: $blue-color;
+                font-weight: bold;
+                font-size: calc(17px + (19 - 17) * ((100vw - 320px) / (1920 - 320)));
+                border-radius: 5px;
+                line-height: 21px;
+                border: unset;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
+    }
+
+}

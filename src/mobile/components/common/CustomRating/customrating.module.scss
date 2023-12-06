@@ -1,0 +1,18 @@
+@import "../../../../app.scss";
+.starrating {
+	button {
+		background-color: transparent;
+		border: none;
+		outline: none;
+		cursor: pointer;
+        span{
+            font-size: 30px;
+        }
+	}
+	.on {
+		color: $star-color;
+	}
+	.off {
+		color: $star-off-color;
+	}
+}

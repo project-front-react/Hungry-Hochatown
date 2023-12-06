@@ -1,0 +1,36 @@
+@import"../../../app.scss";
+.searchMain{
+    padding: 0px 15px;
+    .recentSearch{
+        padding-top: calc(25px + (30 - 25) * ((100vw - 320px) / (1920 - 320)));
+        h1{
+            color: $white-color;
+            font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (1920 - 320))) !important;
+            font-weight: 600;
+            margin-top: 0 !important;
+        }
+        ul{
+            gap: 15px;
+            margin-left: -15px;
+            margin-right: -15px;
+            padding-left: 15px;
+            padding-right: 15px;
+            list-style: none;
+            li{
+                padding: 6px 20px;
+                background-color: $grayback-color;
+                border-radius: 5px;
+                font-weight: normal;
+                cursor: pointer;
+                display: inline-block;
+                margin: 4px;
+                color: $white-color;
+                font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320))) !important;
+            }
+        }
+    }
+}.noOrder {
+	text-align: center;
+	font-size: 16px;
+	margin-top: 6rem;
+}

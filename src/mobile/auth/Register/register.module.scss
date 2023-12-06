@@ -1,0 +1,246 @@
+@import "../../../app.scss";
+.loginPage {
+	padding: 25px 15px;
+	background-color: $orange-color;
+	margin-top: -22px;
+	border-radius: 22px 22px 0px 0px;
+	.logoA {
+		height: 50px;
+	}
+	.brandText {
+		line-height: calc(20px + (25 - 20) * ((100vw - 320px) / (1920 - 320)));
+		margin-top: 15px;
+		font-size: calc(
+			20px + (24 - 20) * ((100vw - 320px) / (1920 - 320))
+		) !important;
+		font-weight: 700 !important;
+		margin-bottom: 0 !important;
+		color: $white-color;
+	}
+	.contentText {
+		color: $white-color;
+		font-size: calc(
+			14px + (16 - 14) * ((100vw - 320px) / (1920 - 320))
+		) !important;
+		margin-top: 0.25rem !important;
+	}
+	.loginSection {
+		padding: 0 !important;
+		.customForm {
+			text-align: center;
+			h1 {
+				margin-bottom: calc(6px + (10 - 6) * ((100vw - 320px) / (1920 - 320)));
+				text-align: left;
+				color: $white-color;
+				font-size: calc(
+					16px + (18 - 16) * ((100vw - 320px) / (1920 - 320))
+				) !important;
+				font-weight: 500 !important;
+				line-height: 33px;
+			}
+			.errorText {
+				text-align: left;
+				color: $white-color;
+				font-size: 12px;
+				margin-top: -10px !important;
+			}	
+			.inputBox {
+				margin-bottom: calc(
+					15px + (20 - 15) * ((100vw - 320px) / (1920 - 320))
+				);
+				position: relative;
+				input {
+					line-height: 28px;
+					padding: calc(8px + (10 - 8) * ((100vw - 320px) / (1920 - 320)));
+					padding-left: calc(
+						15px + (18 - 15) * ((100vw - 320px) / (1920 - 320))
+					);
+					padding-right: calc(
+						40px + (18 - 15) * ((100vw - 320px) / (1920 - 320))
+					);
+					width: -webkit-fill-available;
+					width: -moz-available;
+				}
+				input:focus {
+					background-color: #edf8f8;
+					outline: none;
+					// border-color: #0baf9a !important;
+				}
+				svg {
+					font-size: calc(22px + (28 - 22) * ((100vw - 320px) / (1920 - 320)));
+					font-weight: 100;
+					position: absolute;
+					right: 10px;
+					top: 50%;
+					-webkit-transform: translateY(-50%);
+					transform: translateY(-50%);		
+				}
+				.formControl {
+					font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+					border: 1px solid #fd5d032b;
+					background-color: $white-color;
+					color: $black-color;
+					display: block;
+					font-weight: 400;
+					border-radius: 0.25rem;
+				}
+				.Errorfocus {
+					border: $white-color 1px solid;
+					border-radius: 5px;
+				}
+				.passwordIcon {
+					cursor: pointer;
+				}
+				.TermsConditionsPopUpMain{
+					text-align: left;
+				}
+			}
+			.forGot {
+				margin-top: -12px;
+				text-align: right;
+				display: block;
+				color: $gray-color;
+				font-size: calc(
+					14px + (16 - 14) * ((100vw - 320px) / (1920 - 320))
+				) !important;
+				margin-bottom: 1rem !important;
+			}
+			.signINbtn {
+				width: 100%;
+				margin-bottom: 22px;
+				font-weight: 600;
+				font-size: calc(17px + (19 - 17) * ((100vw - 320px) / (1920 - 320)));
+				font-family: inherit;
+				padding: calc(8px + (14 - 8) * ((100vw - 320px) / (1920 - 320)))
+					calc(20px + (34 - 20) * ((100vw - 320px) / (1920 - 320)));
+				background-color: $black-color;
+				color: $white-color;
+				border-radius: 5px;
+				line-height: 21px;
+				border: unset;
+				cursor: pointer;
+			}
+			.orText {
+				color: $white-color;
+				font-size: calc(
+					14px + (16 - 14) * ((100vw - 320px) / (1920 - 320))
+				) !important;
+			}
+			span a {
+				text-decoration: underline;
+				font-weight: 700;
+				margin-left: 4px;
+				color: $white-color;
+			}
+			// .TermsConditions {
+			// 	text-align: left !important;
+			// 	margin-bottom: calc(
+			// 		15px + (20 - 15) * ((100vw - 320px) / (1920 - 320))
+			// 	);
+			// 	margin-left: -10px;
+			// 	input {
+			// 		padding: 0;
+			// 		height: initial;
+			// 		width: initial;
+			// 		margin-bottom: 0;
+			// 		display: none;
+			// 		cursor: pointer;
+			// 		&:checked ~ .check::after {
+			// 			content: "";
+			// 			display: block;
+			// 			position: absolute;
+			// 			top: 0px;
+			// 			left: 9px;
+			// 			width: 6px;
+			// 			height: 14px;
+			// 			border: solid $orange-color;
+			// 			border-width: 0 2px 2px 0;
+			// 			transform: rotate(45deg);
+			// 		}
+			// 	}
+			// 	.check {
+			// 		position: relative;
+			// 		cursor: pointer;
+			// 		font-size: 14px;
+			// 		color: inherit;
+			// 		margin-top: 0;
+			// 		margin-left: 10px;
+
+			// 		&::before {
+			// 			content: "";
+			// 			-webkit-appearance: none;
+			// 			background-color: $white-color;
+			// 			border: solid $orange-color;
+			// 			padding: 10px;
+			// 			border-radius: 5px;
+			// 			display: inline-block;
+			// 			position: relative;
+			// 			vertical-align: middle;
+			// 			cursor: pointer;
+			// 			margin-right: 5px;
+			// 		}
+			// 	}
+			// 	span{
+			// 		font-size: 16px;
+			// 		text-decoration: underline;
+			// 		cursor: pointer;
+			// 	}
+			// }
+		}
+		.socilaSection {
+			margin-top: 30px;
+			.orText {
+				width: 100%;
+				// padding: 2px;
+				text-align: center;
+				display: block;
+				background-position: bottom;
+				background-size: 14px 1px;
+				background-repeat: repeat-x;
+				span {
+					color: $white-color !important;
+					padding: 8px 10px;
+					left: 50%;
+					font-size: calc(
+						14px + (16 - 14) * ((100vw - 320px) / (1920 - 320))
+					) !important;
+					font-weight: 500;
+				}
+			}
+			.socialWrap {
+				margin-top: calc(15px + (50 - 30) * ((100vw - 320px) / (1920 - 320)));
+				.googleLogin {
+					border-radius: 5px !important;
+					background-color: #f4e0c7 !important;
+					display: flex !important;
+					-webkit-box-align: center !important;
+					align-items: center !important;
+					-webkit-box-pack: center !important;
+					justify-content: center !important;
+					gap: 8px !important;
+					width: 100% !important;
+					box-shadow: none !important;
+					max-height: 43px !important;
+					div {
+						background-color: transparent !important;
+						margin: unset !important;
+					}
+					span {
+						color: $black-color !important;
+						font-size: calc(
+							16px + (18 - 16) * ((100vw - 320px) / (1920 - 320))
+						) !important;
+						font-weight: 600 !important;
+					}
+				}
+			}
+		}
+	}
+}
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}

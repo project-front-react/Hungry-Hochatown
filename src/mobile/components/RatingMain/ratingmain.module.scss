@@ -1,0 +1,131 @@
+@import "../../../app.scss";
+.header {
+	padding: calc(10px + (15 - 10) * ((100vw - 320px) / (1920 - 320))) 15px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	background-color: $primary-color;
+	.logoWrapHeader {
+		display: flex;
+		align-items: center;
+		span {
+			font-weight: 200;
+			font-size: 20px;
+			cursor: pointer;
+			display: flex;
+			border: 3px solid $black-color;
+			border-radius: 10px;
+			svg {
+				stroke-width: 2px !important;
+			}
+		}
+	}
+	.logoWrap {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		/* display: none; */
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		gap: calc(7px + (12 - 7) * ((100vw - 320px) / (1920 - 320)));
+		.logoW {
+			display: none;
+		}
+		.logo {
+			height: 50px;
+		}
+	}
+}
+.ratingmain {
+	padding: 0 15px;
+	.restBody {
+		background: $input-focus;
+		border-radius: 10px;
+		padding: 12px;
+		margin-bottom: 20px;
+		display: flex;
+		justify-content: space-between;
+		.leftSide {
+			h1 {
+				font-weight: 700;
+				color: $black-color !important;
+				font-size: calc(
+					16px + (18 - 16) * ((100vw - 320px) / (1920 - 320))
+				) !important;
+				margin: 0 !important;
+				line-height: 33px;
+				text-transform: capitalize;
+			}
+			p {
+				margin: 0 !important;
+				line-height: 1.5;
+			}
+			small {
+				color: $orange-color;
+			}
+		}
+		.rightSide {
+			.ratingText {
+				color: $gray-color;
+				font-size: calc(
+					13px + (14 - 13) * ((100vw - 320px) / (1920 - 320))
+				) !important;
+				margin-left: 0 !important;
+			}
+		}
+	}
+	.productReview {
+		.topContent {
+			h3 {
+				font-weight: 600;
+				font-size: calc(
+					14px + (16 - 14) * ((100vw - 320px) / (1920 - 320))
+				) !important;
+				color: $black-color;
+			}
+			.reviewWrap {
+				.reviewBox {
+					padding: 17px;
+					margin-top: calc(14px + (20 - 14) * ((100vw - 320px) / (1920 - 320)));
+					border-radius: 5px;
+					background-color: $input-focus;
+					.media {
+						display: flex;
+						-webkit-box-align: center;
+						align-items: center;
+						gap: calc(11px + (15 - 11) * ((100vw - 320px) / (1920 - 320)));
+						img {
+							width: calc(40px + (50 - 40) * ((100vw - 320px) / (1920 - 320)));
+							height: calc(40px + (50 - 40) * ((100vw - 320px) / (1920 - 320)));
+							border-radius: 100%;
+						}
+						.mediaBody {
+							h4 {
+								font-weight: 600;
+								margin-top: -4px;
+								font-size: calc(
+									14px + (16 - 14) * ((100vw - 320px) / (1920 - 320))
+								) !important;
+								color: black;
+							}
+						}
+					}
+					p {
+						color: $gray-color;
+						margin-top: 5px;
+						margin-bottom: -2px;
+						font-size: calc(
+							14px + (16 - 14) * ((100vw - 320px) / (1920 - 320))
+						) !important;
+					}
+				}
+			}
+		}
+	}
+}

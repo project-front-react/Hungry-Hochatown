@@ -1,0 +1,51 @@
+@import "../../../app.scss";
+.onboardingPage {
+  text-align: center;
+  background-color: $orange-color;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0 !important;
+  padding-top: 0 !important;
+  .contentWrap {
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    img {
+      width: calc(300px + (150 - 130) * ((100vw - 320px) / (1920 - 320)));
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: calc(25px + (30 - 25) * ((100vw - 320px) / (1920 - 320)));
+    }
+
+    h1 {
+      margin-bottom: calc(15px + (20 - 15) * ((100vw - 320px) / (1920 - 320)));
+      font-weight: 600;
+      font-family: $quicksand-semibold, "sans-serif";
+      margin-top: -4px;
+      line-height: 25px;
+      color: $input-focus;
+    }
+    p {
+      line-height: 22px;
+      margin-top: -5px;
+      margin-bottom: 0;
+      color: $input-focus;
+    }
+  }
+  .signUpBtn {
+    background-color: $secondary-color;
+    color: $white-color;
+    margin-bottom: calc(25px + (35 - 25) * ((100vw - 320px) / (1920 - 320)));
+  }
+  .contentColor {
+    color: $white-color;
+    .signIn {
+      font-weight: 700;
+      color: $white-color;
+    }
+  }
+}

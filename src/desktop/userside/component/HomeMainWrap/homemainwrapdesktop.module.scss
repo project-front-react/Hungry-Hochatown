@@ -1,0 +1,318 @@
+@import "../../../../app.scss";
+.HomeMainWrap {
+  .NavWrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    width: 100%;
+    .LeftSide {
+      width: 50%;
+      .LogoWrap {
+        cursor: pointer;
+        width: 100px;
+        height: auto;
+        padding-left: 80px;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+        @include desktoplarge {
+          padding-left: 20%;
+        }
+        @include tabletNew {
+          padding-left: 60px;
+        }
+        @include tablet {
+          padding-left: 30px;
+        }
+      }
+    }
+    .RightSide {
+      width: 50%;
+      background-color: $orange-color;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      .NavLinks {
+        position: relative;
+        z-index: 999;
+        padding-right: 80px;
+        display: flex;
+        .menu_icon {
+          display: none;
+          font-size: 20px;
+        }
+        .menu_list {
+          list-style-type: none;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 0;
+          .active {
+            list-style: none;
+            color: $white-color;
+            position: relative;
+            font-weight: bold;
+            font-size: 18px;
+            cursor: pointer;
+          }
+          li {
+            color: $white-color;
+            list-style: none;
+            position: relative;
+            font-size: 18px;
+            cursor: pointer;
+            margin-left: 25px;
+            li.active {
+              list-style: none;
+              color: $white-color;
+              position: relative;
+              font-weight: 700;
+              font-size: 18px;
+              cursor: pointer;
+            }
+          }
+        }
+        @media screen and (max-width: 800px) {
+          .NavLinks {
+            .menu_list {
+              li {
+                font-size: 14px;
+                margin-left: 0;
+              }
+            }
+          }
+        }
+        @media screen and (max-width: 994px) {
+          .menu_icon {
+            display: block !important;
+            z-index: 999999 !important;
+            color: $white-color;
+          }
+          .menu_list {
+            flex-direction: column;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            position: absolute;
+            background: $white-color;
+            padding: 0;
+            right: 30px;
+            top: 20px;
+            transition: all 0.5s ease-in-out;
+            li {
+              width: 100%;
+              text-align: center;
+              margin-left: 0 !important;
+              border-bottom: 1px solid $top-border;
+              padding: 10px 0px;
+              color: $black-color !important;
+            }
+            li:last-child {
+              margin: 0;
+            }
+          }
+          .menu_list.close {
+            left: -100%;
+            transition: all 0.5s ease-in-out;
+            display: none;
+          }
+        }
+        .MenuIcon {
+          list-style-type: none;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 0;
+          margin: 0;
+          .active {
+            list-style: none;
+            color: $white-color;
+            position: relative;
+            font-weight: bold;
+            font-size: 18px;
+            cursor: pointer;
+          }
+          li {
+            color: $white-color;
+            list-style: none;
+            position: relative;
+            font-size: 18px;
+            cursor: pointer;
+            margin-left: 25px;
+            li.active {
+              list-style: none;
+              color: $white-color;
+              position: relative;
+              font-weight: 700;
+              font-size: 18px;
+              cursor: pointer;
+            }
+            .CartItemNumber {
+              background-color: $black-color;
+              border-radius: 50%;
+              color: $white-color;
+              font-size: 11px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              position: absolute;
+              height: 20px;
+              width: 20px;
+              top: -8px;
+              text-align: center;
+              left: 8px;
+            }
+            .ToggleWrapper {
+              position: relative;
+              display: inline-block;
+              cursor: pointer;
+              .ToggleList {
+                position: absolute;
+                margin-top: 20px;
+                left: -175px;
+                right: 0;
+                background-color: $white-color;
+                min-width: 180px;
+                width: 100%;
+                padding: 0 10px;
+                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                z-index: 1;
+                .ListItem {
+                  font-size: 18px;
+                  padding: 10px;
+                  color: $black-color;
+                  border-bottom: 1px solid $top-border;
+                  text-align: center;
+                }
+                .ListItem:hover {
+                  background-color: $input-focus;
+                }
+              }
+            }
+          }
+        }
+        @include desktoplarge {
+          padding-right: 100px;
+        }
+        @include tabletNew {
+          padding-right: 60px;
+        }
+        @include tablet {
+          padding-right: 30px;
+        }
+      }
+    }
+  }
+
+  .HomeWrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    width: 100%;
+    .TitleSide {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      h1 {
+        font-size: 38px;
+        font-weight: 700;
+        margin-top: 0;
+        span {
+          color: $orange-color;
+        }
+        @include tablet {
+          font-size: 25px;
+        }
+      }
+      .SearchBox {
+        position: relative;
+        width: 100%;
+        max-width: 400px;
+        svg {
+          position: absolute;
+          font-size: calc(20px + (24 - 20) * ((100vw - 320px) / (1920 - 320)));
+          top: 50%;
+          cursor: pointer;
+          -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+          left: 1rem;
+          font-size: 1.01rem;
+          fill: $orange-color;
+        }
+        input {
+          width: 100%;
+          font-size: calc(15px + (17 - 15) * ((100vw - 320px) / (1920 - 320)));
+          padding: 10px 47px;
+          color: $secondary-color;
+          border: 1px solid $orange-color;
+          background-color: $transparent-color;
+          text-overflow: ellipsis;
+          box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.25);
+          &::-webkit-input-placeholder {
+            color: $secondary-color;
+          }
+
+          &::-moz-placeholder {
+            color: $secondary-color;
+          }
+
+          &:-ms-input-placeholder {
+            color: $secondary-color;
+          }
+
+          &::-ms-input-placeholder {
+            color: $secondary-color;
+          }
+
+          &::placeholder {
+            color: $secondary-color;
+          }
+
+          &:focus {
+            border: 1px solid $orange-color;
+            background-color: $input-focus;
+            color: $input-text;
+          }
+          &:focus-within {
+            outline: none;
+          }
+        }
+        @include tablet {
+          max-width: 340px;
+        }
+      }
+    }
+    .ImageSide {
+      width: 50%;
+      background-color: $orange-color;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .HomeImgWrap {
+        width: 435px;
+        height: auto;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+        @include tablet {
+          padding: 20px;
+        }
+      }
+    }
+  }
+}

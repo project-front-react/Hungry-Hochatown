@@ -1,0 +1,89 @@
+@import "../../../../app.scss";
+.OrderHistoryDesktop {
+  height: 100%;
+  min-height: 450px;
+  h1 {
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .tabWrap {
+    display: block;
+    .orderBox {
+      cursor: pointer;
+      background-color: $white-color;
+      padding: 30px;
+      border: 1px solid $orange-color;
+      margin-bottom: 10px;
+      .media {
+        gap: calc(11px + (15 - 11) * ((100vw - 320px) / (1920 - 320)));
+        .contentBox {
+          .TopContent {
+            display: flex;
+            -webkit-box-align: center;
+            align-items: center;
+            justify-content: space-between;
+            -webkit-box-pack: justify;
+            h2 {
+              margin-top: unset;
+              font-weight: 600;
+              margin-bottom: 15px;
+              color: $black-color;
+              font-size: 22px;
+              line-height: 22px;
+            }
+          }
+          p {
+            margin-bottom: 15px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color: $gray-color;
+            font-size: 20px;
+            margin-top: unset;
+          }
+          span {
+            color: $gray-color;
+            font-size: 18px;
+            span {
+              color: $black-color;
+            }
+          }
+        }
+      }
+      .bottomContent {
+        margin-top: 15px;
+        padding-top: 10px;
+        border-top: 1px solid $black-color;
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        .orderBtn {
+          cursor: pointer;
+          background: $orange-color;
+
+          padding: 10px 30px;
+          color: $white-color;
+          font-size: 20px;
+          font-weight: 600;
+        }
+        button {
+          background: none;
+          border: none;
+          border-bottom: 1px solid $orange-color;
+          color: $gray-color;
+          cursor: pointer;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+.noOrder {
+	text-align: center;
+	font-size: 16px;
+	margin-top: 6rem;
+
+}

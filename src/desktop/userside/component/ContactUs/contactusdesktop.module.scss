@@ -1,0 +1,70 @@
+@import "../../../../app.scss";
+.ContactUsMain {
+	text-align: center;
+	padding: 20px 70px;
+	.ImgWrap {
+		width: 70px;
+		height: auto;
+		margin: 0 auto;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	h1 {
+		margin: 0;
+		margin-bottom: 10px;
+		font-size: 22px;
+		font-weight: 600;
+	}
+	.ContactUsSection {
+		padding: 0 !important;
+		.customForm {
+			.inputbox {
+				margin-bottom: 15px;
+				position: relative;
+				input {
+					width: -webkit-fill-available;
+					width: -moz-available;
+					border: 1px solid $orange-color;
+					padding: 10px 15px;
+					font-size: 14px;
+				}
+				textarea {
+					width: -webkit-fill-available;
+					min-width: -webkit-fill-available;
+					max-width: -webkit-fill-available;
+					width: -moz-available;
+					min-width: -moz-available;
+					max-width: -moz-available;
+					border: 1px solid $orange-color;
+					padding: 10px 15px;
+					font-size: 14px;
+					min-height: 70px;
+					max-height: 70px;
+				}
+			}
+			.errorText {
+				text-align: left;
+				color: $red-color;
+				margin: 0;
+				font-size: 12px;
+				margin-bottom: 15px;
+				margin-top: -10px !important;
+			}
+			.SubmitBtn {
+				background-color: $orange-color;
+				border: 0;
+				width: 100%;
+				color: $white-color;
+				font-size: 18px;
+				padding: 10px 0px;
+				cursor: pointer;
+			}
+		}
+	}
+	@include tablet {
+		padding: 20px 40px;
+	}
+}

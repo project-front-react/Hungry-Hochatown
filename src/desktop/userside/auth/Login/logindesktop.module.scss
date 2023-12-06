@@ -1,0 +1,122 @@
+@import "../../../../app.scss";
+.LoginMain {
+	text-align: center;
+	padding: 20px 70px;
+	.ImgWrap {
+		width: 70px;
+		height: auto;
+		margin: 0 auto;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	h1 {
+		margin: 0;
+		font-size: 22px;
+		font-weight: 600;
+	}
+	p {
+		margin-top: 5px;
+		font-size: 16px;
+		font-weight: 400;
+	}
+	.LoginSection {
+		padding: 0 !important;
+		.customForm {
+			.inputbox {
+				margin-bottom: 15px;
+				position: relative;
+				input {
+					width: -webkit-fill-available;
+					width: -moz-available;
+					border: 1px solid $orange-color;
+					padding: 10px 15px;
+					font-size: 14px;
+				}
+				svg{
+					font-size: calc(22px + (28 - 22) * ((100vw - 320px) / (1920 - 320)));
+					font-weight: 100;
+					position: absolute;
+					right: 10px;
+					top: 50%;
+					-webkit-transform: translateY(-50%);
+					transform: translateY(-50%);
+				}
+			}
+			.forgotbtn {
+				display: flex;
+				justify-content: flex-end;
+				.forGot {
+					// margin-top: -12px;
+					color: $black-color;
+					font-size: calc(
+						14px + (16 - 14) * ((100vw - 320px) / (1920 - 320))
+					) !important;
+					margin-bottom: 1rem !important;
+					background: none;
+					border: none;
+					cursor: pointer;
+				}
+			}
+			.SigninBtn {
+				background-color: $orange-color;
+				border: 0;
+				width: 100%;
+				color: $white-color;
+				font-size: 18px;
+				padding: 10px 0px;
+				cursor: pointer;
+			}
+			P {
+				margin: 10px;
+			}
+			.socialWrap {
+				background-color: $recent-bg;
+				width: 100%;
+				border: unset;
+				.googleLogin {
+					// padding: 14px !important;
+					border-radius: 5px !important;
+					background-color: $recent-bg !important;
+					display: flex !important;
+					-webkit-box-align: center !important;
+					align-items: center !important;
+					-webkit-box-pack: center !important;
+					justify-content: center !important;
+					gap: 8px !important;
+					width: 100% !important;
+					box-shadow: none !important;
+					// max-height: 43px !important;
+					line-height: unset;
+					div {
+						background-color: transparent !important;
+						margin: unset !important;
+					}
+					span {
+						color: $black-color !important;
+						font-size: calc(
+							14px + (18 - 16) * ((100vw - 320px) / (1920 - 320))
+						) !important;
+						font-weight: 600 !important;
+					}
+				}
+			}
+			.errorText{
+				text-align: left;
+				color: $red-color;
+				margin: 0;
+				font-size: 12px;
+				margin-bottom: 15px;
+				margin-top: -10px !important;
+			}
+		}
+		.passwordIcon{
+			cursor: pointer;
+		}
+	}
+	@include tablet {
+		padding: 20px 40px;
+	}
+}

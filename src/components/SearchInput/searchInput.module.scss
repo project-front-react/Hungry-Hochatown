@@ -1,0 +1,52 @@
+@import "../../app.scss";
+.searchBox {
+  position: relative;
+  svg {
+    position: absolute;
+    font-size: calc(20px + (24 - 20) * ((100vw - 320px) / (1920 - 320)));
+    top: 50%;
+    cursor: pointer;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 1rem;
+    font-size: 1.01rem;
+    fill: $orange-color;
+  }
+  input {
+    width: 100%;
+    font-size: calc(15px + (17 - 15) * ((100vw - 320px) / (1920 - 320)));
+    padding: 10px 47px;
+    border-radius: 4px;
+    color: $secondary-color;
+    border: 1px solid $transparent-color;
+    background-color: $white-color;
+    &::-webkit-input-placeholder {
+      color: $secondary-color;
+    }
+
+    &::-moz-placeholder {
+      color: $secondary-color;
+    }
+
+    &:-ms-input-placeholder {
+      color: $secondary-color;
+    }
+
+    &::-ms-input-placeholder {
+      color: $secondary-color;
+    }
+
+    &::placeholder {
+      color: $secondary-color;
+    }
+
+    &:focus {
+      border: 1px solid $input-border;
+      background-color: $input-focus;
+      color: $input-text;
+    }
+    &:focus-within {
+      outline: none;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+@import "../../../../app.scss";
+.OrderByRestaurantSection {
+	.OrderByRestaurantMain {
+		padding-bottom: 50px;
+		.TitleWrap {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-bottom: 20px;
+			h3 {
+				margin: 0;
+				color: $black-color;
+				font-size: 24px;
+				font-weight: 700;
+			}
+			span {
+				color: $orange-color;
+				font-size: 20px;
+				font-weight: 600;
+				cursor: pointer;
+			}
+		}
+		.RestocategoryParent {
+			display: grid;
+			width: 100%;
+			grid-template-columns: repeat(4, 1fr);
+			grid-column-gap: 1rem;
+			grid-row-gap: 1rem;
+			width: 100%;
+			.ItemMain {
+				width: 100%;
+				padding-top: 10px;
+				cursor: pointer;
+				text-decoration: none;
+				.ImgWrap {
+					height: 150px;
+					margin: auto;
+					img {
+						object-fit: cover;
+						width: 100%;
+						height: 100%;
+					}
+				}
+				h4 {
+					font-size: 18px;
+					font-weight: 600;
+				}
+			}
+		}
+	}
+}

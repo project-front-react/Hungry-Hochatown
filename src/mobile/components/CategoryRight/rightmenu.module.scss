@@ -1,0 +1,76 @@
+@import "../../../app.scss";
+.rightSection {
+	height: 70vh;
+	overflow: hidden;
+	overflow-y: auto;
+	-webkit-box-flex: 1;
+	flex: 1 1 auto;
+	position: relative;
+	width: 100%;
+	.rightMenu {
+		h2 {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 50vh;
+			overflow: auto;
+		}
+
+		.tabContent {
+			display: block;
+
+			.tabWrap {
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				grid-template-rows: repeat(4, 1fr);
+				grid-column-gap: 10px;
+				grid-row-gap: 10px;
+
+				.staplesBox {
+					text-align: center;
+					position: relative;
+					cursor: pointer;
+
+					div {
+						height: calc(100px + (90 - 80) * ((100vw - 320px) / (1920 - 320)));
+
+						img {
+							width: 100%;
+							object-fit: cover;
+							height: calc(
+								100px + (90 - 80) * ((100vw - 320px) / (1920 - 320))
+							);
+							border-radius: 10px;
+							filter: brightness(0.5);
+							max-width: 100%;
+							vertical-align: middle;
+							border: 1px solid $black-color;
+						}
+
+						h4 {
+							margin-top: 4px;
+							font-size: calc(
+								14px + (15 - 14) * ((100vw - 320px) / (1920 - 320))
+							);
+							color: $white-color;
+							font-weight: 600;
+							-webkit-transition: all 0.5s;
+							transition: all 0.5s;
+							line-height: 18px !important;
+							position: absolute;
+							bottom: 10px;
+							font-weight: 700;
+							left: 10px;
+							margin: 0;
+							@include midmobile  {
+								font-size: calc(
+									11px + (15 - 14) * ((100vw - 320px) / (1920 - 320))
+								);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

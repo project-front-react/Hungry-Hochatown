@@ -1,0 +1,85 @@
+@import "variables.scss";
+
+/*mixins declared below*/
+@mixin xxsMobile {
+  @media (max-width: #{$xxs-min-width}) {
+    @content;
+  }
+}
+@mixin smMobile {
+  @media (max-width: #{$xs-min-width}) {
+    @content;
+  }
+}
+@mixin xsMobile {
+  @media (max-width: #{$mobail-max-width}) {
+    @content;
+  }
+}
+@mixin midmobile {
+  @media (max-width: #{$xxs-max-width}) {
+    @content;
+  }
+}
+// upTo 767px breakpoint
+@mixin mobile {
+  @media (max-width: #{$xs-max-width}) {
+    @content;
+  }
+}
+// tablet view
+@mixin tablet {
+  @media (max-width: #{$sm-max-width}) {
+    @content;
+  }
+}
+// from 767px - 1024px
+@mixin tabletNew {
+  @media (min-width: #{$sm-min-width}) and(max-width:#{$md-max-width}) {
+    @content;
+  }
+}
+@mixin desktopsmall {
+  @media (max-width: #{$md-max-width}) {
+    @content;
+  }
+}
+// 1200px
+@mixin desktop {
+  @media (min-width: #{$lg-min-width}) {
+    @content;
+  }
+}
+// 1440px breakpoint
+@mixin desktoplarge {
+  @media (min-width: #{$xlg-min-width}) {
+    @content;
+  }
+}
+// extra large desktops
+@mixin desktopxtralarge {
+  @media (min-width: #{$xxlg-min-width}) {
+    @content;
+  }
+}
+// extra extra large desktops 1920
+@mixin desktopxxtralarge {
+  @media (min-width: #{$xxlg-max-width}) {
+    @content;
+  }
+}
+
+//***** all the font sizes *****//
+// font mixin creation
+@mixin headingFont {
+}
+@mixin semiBoldFont {
+}
+@mixin mediumFont {
+}
+@mixin paragraphFont {
+}
+@mixin lightFont {
+}
+@mixin italicFont {
+}

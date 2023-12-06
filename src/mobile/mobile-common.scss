@@ -1,0 +1,41 @@
+@import "../app.scss";
+.mb-xxl {
+  margin-bottom: calc(75px + (100 - 75) * ((100vw - 320px) / (1920 - 320)));
+}
+section,
+.section-p-tb {
+  padding-top: calc(25px + (30 - 25) * ((100vw - 320px) / (1920 - 320)));
+  padding-bottom: calc(25px + (30 - 25) * ((100vw - 320px) / (1920 - 320)));
+}
+.font-lg {
+  font-size: calc(
+    20px + (24 - 20) * ((100vw - 320px) / (1920 - 320))
+  ) !important;
+}
+.font-md {
+  font-size: calc(
+    16px + (18 - 16) * ((100vw - 320px) / (1920 - 320))
+  ) !important;
+}
+.btn-solid {
+  padding: calc(8px + (14 - 8) * ((100vw - 320px) / (1920 - 320)))
+    calc(20px + (34 - 20) * ((100vw - 320px) / (1920 - 320)));
+  background-color: var(--orange);
+  color: var(--white);
+  font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (1920 - 320)));
+  border-radius: 5px;
+  font-weight: 600;
+  line-height: 21px;
+  display: inline-block;
+}
+.font-sm {
+  font-size: calc(
+    14px + (16 - 14) * ((100vw - 320px) / (1920 - 320))
+  ) !important;
+}
+.fw-600 {
+  font-weight: 600;
+}
+.underline {
+  text-decoration: underline;
+}

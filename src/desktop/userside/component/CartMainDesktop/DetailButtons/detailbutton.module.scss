@@ -1,0 +1,248 @@
+@import "../../../../../app.scss";
+.BtnWrap {
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	border: 1px solid $orange-color;
+	padding: 35px 15px;
+	.AddAdderessBtn {
+		background-color: $orange-color;
+		color: $white-color;
+		font-size: 20px;
+		font-weight: 700;
+		width: 100%;
+		border: none;
+		padding: 15px;
+		cursor: pointer;
+		margin-bottom: 25px;
+	}
+	.AddPaymentBtn {
+		background-color: $orange-color;
+		color: $white-color;
+		font-size: 20px;
+		font-weight: 700;
+		width: 100%;
+		border: none;
+		padding: 15px;
+		cursor: pointer;
+	}
+	.errorText {
+		text-align: left;
+		color: $red-color;
+		margin: 0;
+		font-size: 12px;
+		margin-bottom: 15px;
+		margin-top: -10px !important;
+	}
+	p {
+		font-size: 20px;
+		font-weight: 700;
+		margin: 0;
+		padding-bottom: 20px;
+		border-bottom: 1px solid $top-border;
+	}
+	span{
+		font-size: 20px;
+		font-weight: 700;
+		margin: 0;
+		padding-top: 20px;
+	}
+	.AddAdderessPopup {
+		h1 {
+			font-size: 20px;
+			font-weight: 600;
+		}
+		.customForm {
+			.inputBox {
+				margin-bottom: calc(
+					15px + (20 - 15) * ((100vw - 320px) / (1920 - 320))
+				);
+				position: relative;
+				.formControl {
+					font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+					padding: calc(8px + (10 - 8) * ((100vw - 320px) / (1920 - 320))) 0;
+					padding-right: calc(
+						44px + (47 - 44) * ((100vw - 320px) / (1920 - 320))
+					);
+					padding-left: calc(
+						15px + (18 - 15) * ((100vw - 320px) / (1920 - 320))
+					);
+					border: 1px solid $border-color;
+					background-color: $white-color;
+					color: $black-color;
+					display: block;
+					width: 100%;
+					font-weight: 400;
+					line-height: 1.5;
+					appearance: none;
+					border-radius: 0.25rem;
+				}
+				input {
+					border-radius: 0.25rem;
+					line-height: 28px;
+					padding: calc(8px + (10 - 8) * ((100vw - 320px) / (1920 - 320)));
+					padding-right: calc(
+						44px + (47 - 44) * ((100vw - 320px) / (1920 - 320))
+					);
+					padding-left: calc(
+						15px + (18 - 15) * ((100vw - 320px) / (1920 - 320))
+					);
+					font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+					border: 1px solid $border-color;
+					background-color: $white-color;
+					color: $black-color;
+					width: -webkit-fill-available;
+					width: -moz-available;
+				}
+				textarea {
+					width: -webkit-fill-available;
+					width: -moz-available;
+					min-height: calc(1.5em + (0.75rem + 2px));
+					line-height: 28px;
+					padding: calc(8px + (10 - 8) * ((100vw - 320px) / (1920 - 320)));
+					padding-right: calc(
+						44px + (47 - 44) * ((100vw - 320px) / (1920 - 320))
+					);
+					padding-left: calc(
+						15px + (18 - 15) * ((100vw - 320px) / (1920 - 320))
+					);
+					font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+					border: 1px solid $border-color;
+					background-color: $white-color;
+					color: $black-color;
+				}
+				iframe {
+					width: 100%;
+					height: 100%;
+				}
+			}
+			.PaymentBtn {
+				button {
+					background-color: $orange-color;
+					color: $white-color;
+					font-size: 20px;
+					font-weight: 400;
+					width: 100%;
+					border: none;
+					padding: 10px 0px;
+				}
+			}
+		}
+	}
+	.AddPayment {
+		h1 {
+			font-size: 20px;
+			font-weight: 600;
+		}
+		.PaymentDetails {
+			.customForm {
+				.dateCV {
+					display: grid;
+					grid-template-columns: repeat(2, 1fr);
+					grid-template-rows: 1fr;
+					grid-column-gap: 10px;
+					grid-row-gap: 0px;
+					.cv {
+						input {
+							border-radius: 0.25rem;
+							line-height: 28px;
+							padding: calc(8px + (10 - 8) * ((100vw - 320px) / (1920 - 320)));
+							padding-right: calc(
+								44px + (47 - 44) * ((100vw - 320px) / (1920 - 320))
+							);
+							padding-left: calc(
+								15px + (18 - 15) * ((100vw - 320px) / (1920 - 320))
+							);
+							font-size: calc(
+								14px + (16 - 14) * ((100vw - 320px) / (1920 - 320))
+							);
+							border: 1px solid $border-color;
+							background-color: transparent;
+							color: $black-color;
+							width: -webkit-fill-available;
+							width: -moz-available;
+						}
+					}
+				}
+				.inputBox {
+					margin-bottom: calc(
+						15px + (20 - 15) * ((100vw - 320px) / (1920 - 320))
+					);
+					position: relative;
+					.formControl {
+						font-size: calc(
+							14px + (16 - 14) * ((100vw - 320px) / (1920 - 320))
+						);
+						padding: calc(8px + (10 - 8) * ((100vw - 320px) / (1920 - 320))) 0;
+						padding-right: calc(
+							44px + (47 - 44) * ((100vw - 320px) / (1920 - 320))
+						);
+						padding-left: calc(
+							15px + (18 - 15) * ((100vw - 320px) / (1920 - 320))
+						);
+						border: 1px solid $border-color;
+						background-color: transparent;
+						color: $black-color;
+						display: block;
+						width: 100%;
+						font-weight: 400;
+						line-height: 1.5;
+						appearance: none;
+						border-radius: 0.25rem;
+					}
+					input {
+						border-radius: 0.25rem;
+						line-height: 28px;
+						padding: calc(8px + (10 - 8) * ((100vw - 320px) / (1920 - 320)));
+						padding-right: calc(
+							44px + (47 - 44) * ((100vw - 320px) / (1920 - 320))
+						);
+						padding-left: calc(
+							15px + (18 - 15) * ((100vw - 320px) / (1920 - 320))
+						);
+						font-size: calc(
+							14px + (16 - 14) * ((100vw - 320px) / (1920 - 320))
+						);
+						border: 1px solid $border-color;
+						background-color: $white-color;
+						color: $black-color;
+						width: -webkit-fill-available;
+					}
+					.PaymentElement {
+						border-radius: 0.25rem;
+						line-height: 28px;
+						padding: 15px 20px;
+						border: 1px solid $border-color;
+						background-color: $white-color;
+						color: $black-color;
+						width: -webkit-fill-available;
+						width: -moz-available;
+						width: -moz-available;
+						:focus {
+							border: 1px solid $black-color;
+						}
+					}
+				}
+			}
+		}
+		.PaymentBtn {
+			button {
+				background-color: $orange-color;
+				color: $white-color;
+				font-size: 20px;
+				font-weight: 400;
+				width: 100%;
+				border: none;
+				padding: 10px 0px;
+			}
+		}
+	}
+}
+
+
+.paypalstyle {
+	font-weight:bolder;
+	font-size: 18px;
+	margin: 40px;
+	text-align: center;
+}

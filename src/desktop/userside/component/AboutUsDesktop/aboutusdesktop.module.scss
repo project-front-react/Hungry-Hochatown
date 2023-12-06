@@ -1,0 +1,27 @@
+@import "../../../../app.scss";
+.AboutUsMain {
+	height: 100%;
+	min-height: 420px;
+	text-align: center;
+	margin-bottom: 40px;
+	.TitleWrap {
+		border-bottom: 1px solid $black-color;
+		max-width: 200px;
+		margin-bottom: 20px;
+		margin: 20px auto;
+		h1 {
+			font-size: 32px;
+			font-weight: 600;
+		}
+	}
+	.ContentWrap {
+        margin: 0 auto;
+		p {
+			font-size: 20px;
+			font-weight: 500;
+		}
+	}
+	@include desktoplarge{
+		min-height: 430px;
+	}
+}

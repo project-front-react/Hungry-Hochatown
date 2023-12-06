@@ -1,0 +1,60 @@
+@import "../fonts/stylesheet.scss";
+// theme variable initialization
+/* media breakpoints */
+$xxs-min-width: 325px;
+$xxs-max-width: 425px;
+$mobail-max-width:575px;
+$xs-min-width: 577px;
+$xs-max-width: 767px;
+$sm-min-width: 768px;
+$sm-max-width: 991px;
+$md-min-width: 992px;
+$mdd-min-width: 1025px;
+$mdd-max-width: 1024px;
+$md-max-width: 1199px;
+$lg-min-width: 1200px;
+$lg-max-width: 1439px;
+$xlg-min-width: 1440px;
+$xxlg-min-width: 1800px;
+$xxlg-max-width: 1920px;
+
+$transparent-color: transparent;
+$auth-color: #ffffff;
+$addon-color: #effefc;
+$topping-color: #fff9d8;
+$card-color:#FFF2EC;
+$star-color:#FFBF13;
+$star-off-color:#D9D9D9;
+$top-border: #f1f1f1;
+$lightblue-color: #edf8f8;
+$nav-color: #EFCEAE;
+$gray-color: #777;
+$white-color: #ffffff;
+$black-color: #000000;
+$primary-color: #fd5d03;
+$secondary-color: #191919;
+$orange-color: #fd5d03;
+$input-color: #faf1e4;
+$input-border: #ceefeb;
+$input-focus: #F5F5F5;
+$recent-bg:#f4e0c7;
+$input-text: #222222;
+$bg-pattern: #944509;
+$red-color: #ff0000;
+$blue-color: #0000ff;
+$border-color: #fd5d032b;
+$grayback-color:#8e8e8e;
+$search-color:#8e8e8e26;
+$catagoryactive-color: #bdbdbd;
+$green-color: #068f06;
+$yellow-color: #FFB801;
+$accept-color: #FD5D03;
+$reject-color: #FD0303;
+// Mulish Font
+$mulish-bold: "Mulish-normal-700";
+$mulish-semibold: "Mulish-normal-600";
+$mulish-normal: "Mulish-normal-400";
+// Quick Sand
+$quicksand-bold: "Quicksand-normal-400";
+$quicksand-semibold: "Quicksand-normal-600";
+$quicksand-normal: "Quicksand-normal-400";

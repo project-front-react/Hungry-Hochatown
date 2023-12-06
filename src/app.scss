@@ -1,0 +1,43 @@
+@import "./assets/scss/mixins.scss";
+@import "./assets/scss/variables.scss";
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: $mulish-normal, sans-serif;
+}
+.react-multiple-carousel__arrow--left {
+  left: calc(0% + 1px) !important;
+}
+.react-multiple-carousel__arrow--right {
+  right: calc(0% + 1px) !important;
+}
+.react-multiple-carousel__arrow {
+  position: absolute;
+  outline: 0;
+  transition: all .5s;
+  border-radius: 35px;
+  z-index: 1000;
+  border: 0;
+  background: rgba(0,0,0,0.5);
+  min-width: 20px !important;
+  min-height: 20px !important;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.react-multiple-carousel__arrow::before {
+  font-size: 12px !important;
+  color: #fff;
+  display: block;
+  font-family: revicons;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+}

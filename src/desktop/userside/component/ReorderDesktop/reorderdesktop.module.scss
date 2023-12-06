@@ -1,0 +1,246 @@
+@import "../../../../app.scss";
+.ReorderDesktop {
+	.restAddress {
+		border: 1px solid $orange-color;
+		padding: 25px 30px;
+		display: flex;
+		justify-content: space-between;
+		.leftSide {
+			h1 {
+				font-weight: 700;
+				color: $black-color !important;
+				font-size: 28px;
+				margin: 0;
+				margin-bottom: 10px;
+				line-height: 33px;
+				text-transform: capitalize;
+			}
+			p {
+				font-size: 20px;
+				margin: 0;
+				color: $black-color;
+				margin-bottom: 10px;
+				line-height: 1.5;
+			}
+			small {
+				font-size: 18px;
+				color: $black-color;
+			}
+		}
+		.rightSide {
+			.ratingText {
+				color: $black-color;
+				font-size: 20px;
+				margin-left: 0 !important;
+				text-align: end;
+			}
+			svg {
+				width: 35px;
+				height: 35px;
+			}			
+		}
+	}
+	.idSection {
+		padding-top: 2rem;
+		padding-bottom: 4rem;
+		.bannerBox {
+			padding: 15px;
+			background-color: $black-color;
+			.media {
+				display: flex;
+				-webkit-box-align: center;
+				align-items: center;
+				gap: calc(11px + (15 - 11) * ((100vw - 320px) / (1920 - 320)));
+				svg {
+					stroke-width: 1;
+					color: $white-color;
+					width: calc(50px + (45 - 40) * ((100vw - 320px) / (1920 - 320)));
+					height: calc(50px + (45 - 40) * ((100vw - 320px) / (1920 - 320)));
+				}
+				.mediaBody {
+					span {
+						color: $white-color;
+						display: block;
+						margin-top: calc(
+							-1px + (-3 + 1) * ((100vw - 320px) / (1920 - 320))
+						);
+						font-size: calc(
+							20px + (16 - 14) * ((100vw - 320px) / (1920 - 320))
+						) !important;
+					}
+					h2 {
+						color: $white-color;
+						font-size: calc(
+							22px + (22 - 18) * ((100vw - 320px) / (1920 - 320))
+						);
+						font-weight: 600;
+						margin: 0;
+					}
+				}
+			}
+		}
+	}
+	.DetailsSection {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 1fr;
+		.CartSection {
+			border-right: 1px solid $top-border;
+			padding-right: 30px;
+			.CartItem {
+				height: auto;
+				max-height: 130px;
+				overflow: auto;
+				.itemWrap {
+					margin-bottom: 15px;
+					.itemMedia {
+						display: grid;
+						grid-template-columns: repeat(2, 1fr);
+						.mediaBody {						
+							h4 {
+								margin: 0;
+								font-size: 20px;
+							}
+							.Addons::-webkit-scrollbar {
+								display: block;
+								width: 3px;
+								background-color: #f5f5f5;
+							}
+
+							.Addons::-webkit-scrollbar-track {
+								-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+								background-color: #f5f5f5;
+							}
+
+							.Addons::-webkit-scrollbar-thumb {
+								background-color: $black-color;
+							}
+							.Addons {
+								height: 20px;
+								overflow-y: scroll;
+								width: 100%;
+								max-width: 150px;
+								margin: 0 1rem 0 0rem;
+								p {
+									margin: 0;
+									font-size: 14px;
+									color: $black-color;
+								}
+							}
+						}
+						.count {
+							display: flex;
+							-webkit-box-align: center;
+							justify-content: space-between;
+							align-items: center;
+							.quantity {
+								display: flex;
+								display: -webkit-flex;
+								-webkit-box-align: center;
+								align-items: center;
+					
+								p {
+									margin: 0;
+									font-size: 20px;
+								}
+							}
+							span {
+								font-size: 20px;
+							}
+						}
+					}
+				}
+			}
+			.orderSection {
+				margin-top: 33px;
+				h3 {
+					color: $black-color;
+					margin-bottom: 10px;
+					font-weight: 600;
+					font-size: 22px;
+				}
+				ul {
+					list-style: none;
+					padding: unset;
+					li {
+						padding: 2px 0;
+						display: flex;
+						-webkit-box-align: center;
+						align-items: center;
+						-webkit-box-pack: justify;
+						justify-content: space-between;
+						span {
+							font-size: 18px;
+							border: none;
+							color: $black-color;
+						}
+					}
+					li:last-child {
+						padding: 10px 0;
+						margin-top: 8px;
+						border-top: 1px solid $white-color;
+						margin-bottom: -5px;
+						color: $black-color;
+						span {
+							font-size: 22px;
+							font-weight: 600;
+						}
+					}
+				}
+			}
+			.ReorderBtn {
+				margin-top: 4rem;
+				button {
+					min-width: 300px;
+					font-size: 18px;
+					font-weight: 600;
+					border: none;
+					background-color: $black-color;
+					color: $white-color;
+					padding: 10px 30px;
+				}
+			}
+		}
+		.AddressAndPaymentSection {
+			padding-left: 30px;
+			.AddressSection {
+				margin-bottom: 3rem;
+				h3 {
+					font-size: 20px;
+					font-weight: 600;
+					margin-top: 0;
+				}
+				p {
+					font-size: 18px;
+					font-weight: 500;
+				}
+			}
+			.PaymentSection {
+				.paymentBox{
+					display: flex;
+					-webkit-box-align: center;    
+					align-items: center;
+					gap: 10px;
+					img{
+						width: 50px;
+						height: auto;
+					}
+					span{
+						font-weight: normal;
+						font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320))) !important;
+						color: $white-color;
+					}
+				}
+				h3 {
+					font-size: 20px;
+					font-weight: 600;
+					margin-top: none;
+				}
+				p {
+					font-size: 18px;
+					font-weight: 500;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,186 @@
+@import "../../../app.scss";
+.OredrStatusHeader {
+	padding: calc(10px + (15 - 10) * ((100vw - 320px) / (1920 - 320))) 15px;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: justify;
+	justify-content: space-between;
+	.logoWrap {
+		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		gap: calc(7px + (12 - 7) * ((100vw - 320px) / (1920 - 320)));
+		h1 {
+			color: $black-color;
+			font-size: calc(
+				16px + (18 - 16) * ((100vw - 320px) / (1920 - 320))
+			) !important;
+		}
+		span {
+			font-weight: 200;
+			font-size: 20px;
+			cursor: pointer;
+			display: flex;
+			border: 3px solid $black-color;
+			border-radius: 10px;
+			svg {
+				stroke-width: 2px !important;
+			}
+		}
+	}
+}
+.OredrStatusMain {
+	padding: 0px 15px;
+	.orderBox {
+		background-color: $auth-color;
+		padding: 15px;
+		border: 1px solid $gray-color;
+		border-radius: 10px;
+		margin-bottom: 10px;
+		.media {
+			display: flex;
+			-webkit-box-align: center;
+			align-items: center;
+			justify-content: space-between;
+			-webkit-box-pack: justify;
+			gap: calc(11px + (15 - 11) * ((100vw - 320px) / (1920 - 320)));
+            span{
+                font-size:14px;
+                color: $black-color;
+            }
+            .IDNum{
+                font-size: 14px;
+                font-weight: 700;
+            }
+
+			.reject{
+				color: $reject-color;
+			}
+
+			.accept {
+				color: $accept-color;
+			}
+
+			.delivered {
+				color: $green-color;
+			}
+
+			.decline {
+				color : $yellow-color
+			}
+		}
+        p{
+            white-space: nowrap; 
+            margin: 5px 0px;
+            color: $gray-color;
+            width: 90%;          
+            overflow: hidden;
+            text-overflow: ellipsis; 
+        }
+        .buttomSection{
+            background-color: $recent-bg;
+            padding: 5px 10px;
+            border-radius: 5px;
+            p{
+                margin: 0;
+                font-size: 14px;
+            }
+        }
+	}
+}
+
+.popupSection{
+	padding: 15px;
+	.IDwrap{
+		display: flex;
+		justify-content: flex-end;
+		color: $black-color;
+		font-size: 16px;
+		margin-right: 40px;
+		span{
+			font-weight: 600;
+		}
+	}
+	.Orderfrom{
+		p{
+			font-size: 14px;
+			font-weight: 500;
+			color: $orange-color;
+			margin: 0;
+		}
+		span{
+			display: flex;
+			align-items: center;
+			font-size: 16px;
+			font-weight: 700;
+			gap :5px;
+			svg{
+				font-size: 20px;
+			}
+		}
+		.address{
+			color: $black-color;
+			font-size: 16px;
+		}
+	}
+	.DeliverTo{
+		margin-top: 20px;
+		p{
+			font-size: 14px;
+			font-weight: 500;
+			color: $orange-color;
+			margin: 0;
+		}
+		span{
+			display: flex;
+			align-items: center;
+			font-size: 16px;
+			font-weight: 700;
+			gap :5px;
+			svg{
+				font-size: 18px;
+			}
+		}
+		.address{
+			color: $black-color;
+			font-size: 16px;
+		}
+	}
+	.btnContent {
+		margin-top: 20px;
+		.btnGroup {
+			display: flex;
+			-webkit-box-align: center;
+			align-items: center;
+			gap: 17px;
+			button {
+				-webkit-box-flex: 1;
+				flex: 1 1 auto;
+				font-weight: 600;
+				border: 1px solid $orange-color;
+				padding: calc(
+						10px + (14 - 10) * ((100vw - 320px) / (1920 - 320))
+					)
+					calc(28px + (34 - 28) * ((100vw - 320px) / (1920 - 320)));
+				font-size: calc(
+					16px + (18 - 16) * ((100vw - 320px) / (1920 - 320))
+				) !important;
+				background-color: $orange-color;
+				color: $white-color;
+				border-radius: 5px;
+				display: inline-block;
+				line-height: 21px;
+				cursor: pointer;
+			}
+			.reject{
+				border: 1px solid $recent-bg;
+				background-color: $recent-bg;
+				color: $black-color;
+			}
+		}
+	}
+}
+

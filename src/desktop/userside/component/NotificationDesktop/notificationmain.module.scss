@@ -1,0 +1,30 @@
+@import "../../../../app.scss";
+.NotificationDesktop {
+	h1 {
+        font-size: 24px;
+        font-weight: 600;
+	}
+	.TabContent {
+		.tabWrap {
+			display: block;
+			.orderBox {
+				background-color: $white-color;
+                border: 1px solid $orange-color;
+                padding: 15px 40px;
+				margin-bottom: 25px;
+				h3 {
+					margin: 0;
+					font-size: 18px;
+					overflow: hidden;
+					line-height: 21px;
+					font-weight: 600;
+                    margin-bottom: 10px;
+				}
+				span {
+					color: $gray-color;
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}

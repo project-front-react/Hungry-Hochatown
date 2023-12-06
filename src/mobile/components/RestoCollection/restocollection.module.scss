@@ -1,0 +1,112 @@
+@import "../../../app.scss";
+.header {
+    padding: calc(10px + (15 - 10) * ((100vw - 320px) / (1920 - 320))) 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    background-color: $primary-color;
+    .logoWrapHeader {
+      display: flex;
+      align-items: center;
+      span{
+        font-weight: 200;
+        font-size: 20px;
+        cursor: pointer;
+        border: solid 3px $black-color;
+        border-radius: 10px;
+        display: flex;
+      }
+    }
+    .logoWrap {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      /* display: none; */
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      gap: calc(7px + (12 - 7) * ((100vw - 320px) / (1920 - 320)));
+      .logoW {
+        display: none;
+      }
+      .logo {
+        height: 50px;
+      }
+    }
+}  
+.collectionMain{
+    padding: 0px 15px;
+    .RestoSection{
+        margin-top: 15px;
+        padding-bottom: 0 !important;
+        padding-top: 0 !important;
+        h3{
+            font-size: 20px;
+            line-height: 16px;
+            margin: 0;
+            color: $white-color;
+        }
+        small{
+            color: $white-color;
+        }
+        .colletionWrap{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            grid-column-gap: 20px;
+            grid-row-gap: 10px;
+            padding-right: calc(var(--bs-gutter-x) * .5);
+            padding-left: calc(var(--bs-gutter-x) * .5);
+            margin-top: var(--bs-gutter-y);
+            span{
+                cursor: pointer;
+                .staplesBox{
+                    text-align: center;
+                    position: relative;
+                    margin-top: 10px;
+                    div{
+                        border-radius: 6px;
+                        padding: 0;
+                        height: 100%;
+                        text-align: center;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        img{
+                            width: 100%;
+                            object-fit: cover;
+                            height: calc(130px + (90 - 80) * ((100vw - 320px) / (1920 - 320)));
+                            border-radius: 10px;
+                            filter: brightness(0.4);
+                        }
+                    }
+                    h4{
+                        margin-top: 4px;
+                        font-size: calc(16px + (15 - 14) * ((100vw - 320px) / (1920 - 320)));
+                        color: $white-color;
+                        font-weight: 700;
+                        transition: all 0.5s;
+                        line-height: 18px !important;
+                        position: absolute;
+                        bottom: 6px;
+                        left: 12px;
+                    }
+                    small{
+                        margin-top: 4px;
+                        color: rgba(255, 255, 255, 0.699);
+                        transition: all 0.5s;
+                        line-height: 18px !important;
+                        position: absolute;
+                        bottom: 8px;
+                        left: 12px;
+                    }
+                }
+            }
+        }
+    }
+}

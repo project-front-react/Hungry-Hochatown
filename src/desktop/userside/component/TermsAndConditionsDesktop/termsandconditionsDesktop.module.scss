@@ -1,0 +1,39 @@
+@import"../../../../app.scss";
+.TermsAndConditionsMain {
+	height: 100%;
+	min-height: 420px;
+	text-align: center;
+	margin-bottom: 40px;
+	.TitleWrap {
+		border-bottom: 1px solid $black-color;
+		max-width: 300px;
+		margin-bottom: 20px;
+		margin: 20px auto;
+		h1 {
+			font-size: 32px;
+			font-weight: 600;
+		}
+	}
+	.TermsAndConditionsContentWrap{
+        margin: 0 auto;
+		text-align: left;
+		p {
+			font-size: 20px;
+			font-weight: 500;
+		}
+		h2{
+			font-size: 30px;
+			text-decoration: unset !important;
+			font-weight: 600;
+			padding-bottom: 10px;
+			border-bottom: 1px solid $black-color;
+		}
+		h3{
+			font-size: 24px;
+			font-weight: 600;
+		}
+		a{
+			color: $orange-color;
+		}
+	}
+}

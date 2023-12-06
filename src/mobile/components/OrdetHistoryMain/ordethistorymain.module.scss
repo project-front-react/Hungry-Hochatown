@@ -1,0 +1,165 @@
+@import "../../../app.scss";
+.orderhistoryheader {
+	padding: calc(10px + (15 - 10) * ((100vw - 320px) / (1920 - 320))) 15px;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: justify;
+	justify-content: space-between;
+	.logoWrap {
+		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		gap: calc(7px + (12 - 7) * ((100vw - 320px) / (1920 - 320)));
+		h1 {
+			color: $black-color;
+			font-size: calc(
+				16px + (18 - 16) * ((100vw - 320px) / (1920 - 320))
+			) !important;
+		}
+		span {
+			font-weight: 200;
+			font-size: 20px;
+			cursor: pointer;
+			display: flex;
+			border: 3px solid $black-color;
+			border-radius: 10px;
+			svg {
+				stroke-width: 2px !important;
+			}
+		}
+	}
+	.homeIcon {
+		display: flex;
+		align-items: center;
+		-webkit-box-align: center;
+		gap: calc(6px + (10 - 6) * ((100vw - 320px) / (1920 - 320)));
+		a {
+			font-size: 22px;
+		}
+	}
+}
+.orderhistorymain {
+	padding: 0px 15px;
+	.tabContent {
+		padding-top: calc(25px + (30 - 25) * ((100vw - 320px) / (1920 - 320)));
+		padding-bottom: calc(25px + (30 - 25) * ((100vw - 320px) / (1920 - 320)));
+		.tabWrap {
+			display: block;
+			.orderBox {
+				background-color: $input-focus;
+				padding: 15px;
+				border-radius: 10px;
+				margin-bottom: 10px;
+				.media {
+					// display: flex;
+					// -webkit-box-align: center;
+					// align-items: center;
+					// justify-content: space-between;
+					-webkit-box-pack: justify;
+					gap: calc(11px + (15 - 11) * ((100vw - 320px) / (1920 - 320)));
+					.contentBox {
+						.TopContent {
+							display: flex;
+							-webkit-box-align: center;
+							align-items: center;
+							justify-content: space-between;
+							-webkit-box-pack: justify;
+							h2 {
+								margin-top: unset;
+								font-weight: 600;
+								margin-bottom: 3px;
+								color: $black-color;
+								font-size: calc(
+									14px + (16 - 14) * ((100vw - 320px) / (1920 - 320))
+								) !important;
+								line-height: 22px;
+							}
+						}
+						p {
+							margin-bottom: 3px;
+							overflow: hidden;
+							text-overflow: ellipsis;
+							white-space: nowrap;
+							color: $gray-color;
+							font-size: calc(
+								13px + (14 - 13) * ((100vw - 320px) / (1920 - 320))
+							) !important;
+							margin-top: unset;
+						}
+						span {
+							color: $gray-color;
+							font-size: calc(
+								13px + (14 - 13) * ((100vw - 320px) / (1920 - 320))
+							) !important;
+							span {
+								color: $black-color;
+							}
+						}
+					}
+				}
+				.bottomContent {
+					margin-top: 15px;
+					padding-top: 10px;
+					border-top: 1px solid $black-color;
+					display: flex;
+					-webkit-box-align: center;
+					align-items: center;
+					-webkit-box-pack: justify;
+					justify-content: space-between;
+					.orderBtn {
+						cursor: pointer;
+						background: $orange-color;
+						border-radius: 20px;
+						padding: 5px 10px;
+						color: $white-color;
+						font-size: calc(
+							14px + (16 - 14) * ((100vw - 320px) / (1920 - 320))
+						) !important;
+						font-weight: 600;
+					}
+					.RateAndReview {
+						background: none;
+						border: none;
+						border-bottom: 1px solid $orange-color;
+						color: $gray-color;
+						cursor: pointer;
+						font-size: calc(
+							14px + (16 - 14) * ((100vw - 320px) / (1920 - 320))
+						) !important;
+					}
+					.headerContent {
+						display: flex;
+						justify-content: space-between;
+						align-items: center;
+						padding: calc(20px + (30 - 20) * ((100vw - 320px) / (1920 - 320)))
+							calc(20px + (30 - 20) * ((100vw - 320px) / (1920 - 320))) 20px
+							calc(20px + (30 - 20) * ((100vw - 320px) / (1920 - 320)));
+						h5 {
+							margin: 0;
+							color: $black-color;
+							font-size: calc(
+								20px + (24 - 20) * ((100vw - 320px) / (1920 - 320))
+							) !important;
+						}
+					}
+					.starContent {
+						padding: 0px 15px;
+          }
+          svg{
+            width: 25px;
+            height: 25px;
+          }
+				}
+			}
+		}
+	}
+}
+
+.noOrder {
+	text-align: center;
+	font-size: 16px;
+	margin-top: 6rem;
+}

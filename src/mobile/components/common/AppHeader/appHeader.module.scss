@@ -1,0 +1,33 @@
+@import "../../../../app.scss";
+.header {
+  padding: calc(10px + (15 - 10) * ((100vw - 320px) / (1920 - 320))) 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background-color: $primary-color;
+  .logoWrapHeader {
+    display: flex;
+    align-items: center;
+  }
+  .logoWrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    /* display: none; */
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: calc(7px + (12 - 7) * ((100vw - 320px) / (1920 - 320)));
+    .logoW {
+      display: none;
+    }
+    .logo {
+      height: 50px;
+    }
+  }
+}

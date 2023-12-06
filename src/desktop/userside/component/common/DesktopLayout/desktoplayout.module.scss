@@ -1,0 +1,13 @@
+@import"../../../../../app.scss";
+.DesktopLayout{
+    padding: 0px 80px;
+    @include desktoplarge{
+        padding: 0px 100px;
+    }
+    @include tabletNew{
+        padding: 0px 60px;
+    }
+    @include tablet{
+        padding: 0px 30px;
+    }
+}

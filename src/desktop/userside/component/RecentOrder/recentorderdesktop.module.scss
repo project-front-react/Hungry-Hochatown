@@ -1,0 +1,43 @@
+@import"../../../../app.scss";
+.RecentOrdersSection {
+    background-color: $black-color;
+    .RecentOrdersMain {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        h3 {
+            margin: 0;
+            color: $white-color;
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        .ItemMain {
+            display: inline-block;
+            position: relative;
+            width: 100%;
+            img {
+                cursor: pointer;
+                width: 100%;
+                height: calc(120px + (80 - 50) * ((100vw - 320px) / (1920 - 320)));
+                object-fit: cover;
+                min-width: 140px;
+                border: 2px solid $white-color;
+            }
+            p {
+                text-align: -webkit-auto;
+                color: $white-color;
+                font-weight: 700;
+                font-size: 16px;
+                bottom: 16px;
+                margin-bottom: 0;
+                line-height: 1.5;
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+.noRecent {
+    color: white;
+    font-size: 26px;
+}

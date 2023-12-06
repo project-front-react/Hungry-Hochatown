@@ -1,0 +1,63 @@
+@import "../../../../app.scss";
+.layoutmain {
+	background-image: url(../../../../assets/images/banner/bg-pattern.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	background-color: $orange-color;
+	.CardSection {		
+        height: 100%;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        .CardMain{            
+            margin: 20px;
+            width: 100%;
+            max-width: 1000px;
+            height: 95%;
+            display: flex;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            .LeftSide{
+                width: 50%;
+                position: relative;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                p{
+                    position: absolute;
+                    color: $white-color;
+                    bottom: 0;                    
+                    text-align: center;
+                    width: 100%;
+                    font-size: 18px;
+                    font-weight: 700;
+                    span{
+                        text-decoration: underline;
+                        cursor: pointer;                    
+                    }
+                }                                
+            }
+            .RigthSide{
+                width: 50%;
+                background-color: $white-color;
+                display: flex;
+                justify-content: center;            
+                text-align: center;
+                flex-direction: column;
+            }
+            @include desktoplarge{
+                height: 75%;
+            }
+            @include tabletNew{
+                height: 95%;
+            }
+            @include tablet{
+                height: 70%;
+            }
+        }		
+	}
+}

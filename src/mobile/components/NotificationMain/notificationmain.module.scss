@@ -1,0 +1,79 @@
+@import "../../../app.scss";
+.Notificationheader {
+	padding: calc(10px + (15 - 10) * ((100vw - 320px) / (1920 - 320))) 15px;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: justify;
+	justify-content: space-between;
+	.logoWrap {
+		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		gap: calc(7px + (12 - 7) * ((100vw - 320px) / (1920 - 320)));
+		h1 {
+			color: $black-color;
+			font-size: calc(
+				16px + (18 - 16) * ((100vw - 320px) / (1920 - 320))
+			) !important;
+		}
+		span {
+			font-weight: 200;
+			font-size: 20px;
+			cursor: pointer;
+			display: flex;
+			border: 3px solid $black-color;
+			border-radius: 10px;
+			svg {
+				stroke-width: 2px !important;
+			}
+		}
+	}
+	.homeIcon {
+		display: flex;
+		align-items: center;
+		-webkit-box-align: center;
+		gap: calc(6px + (10 - 6) * ((100vw - 320px) / (1920 - 320)));
+		a {
+			font-size: 22px;
+		}
+	}
+}
+.notificationMain {
+	padding: 0px 15px;
+	.tabContent {
+		padding-top: calc(25px + (30 - 25) * ((100vw - 320px) / (1920 - 320)));
+		padding-bottom: calc(25px + (30 - 25) * ((100vw - 320px) / (1920 - 320)));
+		.tabWrap {
+			display: block;
+			.orderBox {
+				background-color: $input-focus;
+				padding: 15px;
+				border-radius: 10px;
+				margin-bottom: 15px;
+				h3 {
+					margin: 0;
+					font-size: calc(
+						14px + (16 - 14) * ((100vw - 320px) / (1920 - 320))
+					) !important;
+					overflow: hidden;
+					line-height: 21px;
+					font-weight: 600;
+				}
+				span {
+					color: $gray-color;
+					font-size: calc(
+						13px + (14 - 13) * ((100vw - 320px) / (1920 - 320))
+					) !important;
+				}
+			}
+		}
+	}
+}
+.noOrder {
+	text-align: center;
+	font-size: 16px;
+	margin-top: 6rem;
+}

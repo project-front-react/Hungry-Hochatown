@@ -1,0 +1,60 @@
+@import "../../../../app.scss";
+.footerWrap {
+  margin: 0 auto;
+  max-width: 767px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: calc(10px + (15 - 10) * ((100vw - 320px) / (1920 - 320))) 0;
+  background-color: $black-color;
+  z-index: 60;
+  ul {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 0;
+  }
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 8px;
+    li {
+      list-style: none;
+      position: relative;
+    }
+    .footerItem {
+      .footerLink {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 2px;
+        i {
+          font-size: 25px;
+          color: $white-color;
+        }
+        span {
+          color: $white-color;
+          margin-bottom: -3px;
+          font-size: calc(12px + (15 - 12) * ((100vw - 320px) / (1920 - 320)));
+        }
+      }
+
+      .footerLinkActive {
+        content: "";
+        position: absolute;
+        left: 42%;
+        width: 4px;
+        height: 4px;
+        display: block;
+        background-color: #ffffff;
+        border-radius: 100%;
+        top: -10px;
+      }
+    }
+  }
+  @media screen and (min-width: 767px) {
+    max-width: 600px;
+  }
+}
